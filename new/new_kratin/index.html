@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <!-- ...other head elements... -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Medication Reminder System</h1>
+    <form id="medicationForm">
+      <label for="medicationName">Medication Name:</label><br />
+      <input type="text" id="medicationName" name="medicationName" required /><br />
+      <label>Medication Time:</label><br />
+      <div id="timeInput">
+        <label for="medicationHour">Hour:</label>
+        <select id="medicationHour" name="medicationHour"></select>
+        <label for="medicationMinute">Minute:</label>
+        <select id="medicationMinute" name="medicationMinute"></select>
+        <label for="medicationPeriod">Period:</label>
+        <select id="medicationPeriod" name="medicationPeriod">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </div>
+      <input type="submit" value="Set Reminder" />
+    </form>
+    <div id="alarms"></div>
+
+    <button id="stopSound">Stop Sound</button>
+    <script src="script.js"></script>
+  </body>
+</html>

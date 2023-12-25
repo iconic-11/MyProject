@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #f5f5f5, #ffffff);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 40px;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#medicationForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+#medicationForm label,
+#medicationForm input,
+#medicationForm select {
+  margin-bottom: 10px;
+}
+
+#medicationForm input[type="submit"] {
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card i {
+  position: relative;
+  top: -2px;
+  left: 3px;
+  color: #607d8b;
+  font-size: 15px; /* Smaller icon */
+  margin-right: 15px;
+}
+
+.card .inner-div {
+  color: #37474f;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.card button {
+  background-color: transparent;
+  color: #f44336;
+  border: 1px solid #f44336;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+#timeInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#timeInput label {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+#timeInput select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+}
+
+#timeInput button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#timeInput button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#alarms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  flex-basis: calc(100% - 20px);
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card i {
+  color: #607d8b;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.card .inner-div {
+  color: #37474f;
+  font-size: 18px;
+}
+
+.card button {
+  background-color: transparent;
+  color: #f44336;
+  border: 1px solid #f44336;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+#stopSound {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  #alarms div {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 900px) {
+  #alarms div {
+    flex-basis: calc(33.33% - 20px);
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  label,
+  input,
+  select,
+  button {
+    font-size: 20px;
+  }
+}
